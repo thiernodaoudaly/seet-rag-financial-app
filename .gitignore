@@ -1,0 +1,73 @@
+# ENVIRONNEMENT PYTHON
+# Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+# Virtual environments
+venv/
+env/
+.venv/
+.conda/
+rag-financial/
+
+
+# SECRETS & CONFIGURATION
+# Variables d'environnement
+.env
+.env.local
+# Clés API - NE JAMAIS COMMITER
+*api_key*
+*API_KEY*
+
+
+# DONNÉES & FICHIERS GÉNÉRÉS
+# Documents PDF sources (trop volumineux)
+data/pdfs/*.pdf
+# Extractions et chunks générés
+data/processed/extractions/**/*.txt
+data/processed/extractions_minio/
+data/processed/**/*_chunks.json
+# Embeddings générés
+data/embeddings/
+# Conserver la structure des dossiers
+!data/pdfs/.gitkeep
+!data/processed/.gitkeep
+
+
+# DOCKER & SERVICES
+# Volumes Docker (données OpenSearch et MinIO)
+opensearch-data/
+minio-data/
+
+
+# IDE & ÉDITEUR
+# Visual Studio Code
+.vscode/
+
+
+# SYSTÈME D'EXPLOITATION
+# macOS
+.DS_Store
+# Windows
+Thumbs.db
+
+
+# CACHE & LOGS
+# Cache Python
+.cache/
+.mypy_cache/
+.pytest_cache/
+# Logs
+*.log
+logs/
+
+
+# TESTS & ÉVALUATION
+# Résultats d'évaluation 
+tests/evaluation_results.json
+tests/ragas_scores.json

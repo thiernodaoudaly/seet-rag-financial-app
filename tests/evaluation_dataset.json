@@ -1,0 +1,94 @@
+{
+  "questions": [
+    {
+      "question": "Quel est le chiffre d'affaires consolidé du Groupe Sonatel au premier semestre 2025 ?",
+      "ground_truth": "Le chiffre d'affaires consolidé du premier semestre 2025 s'élève à 960,2 milliards de FCFA, en croissance de 9,4% par rapport au S1 2024.",
+      "metadata": {
+        "periode": "S1 2025",
+        "annee": 2025,
+        "type": "financier"
+      }
+    },
+    {
+      "question": "Quel est le montant de l'EBITDAAL au premier trimestre 2024 ?",
+      "ground_truth": "L'EBITDAAL du premier trimestre 2024 s'élève à 193,3 milliards de FCFA avec une marge de 45,4%, en croissance de 16,7%.",
+      "metadata": {
+        "periode": "T1 2024",
+        "annee": 2024,
+        "type": "financier"
+      }
+    },
+    {
+      "question": "Combien de clients mobiles le Groupe Sonatel compte-t-il au S1 2025 ?",
+      "ground_truth": "Le Groupe Sonatel compte 41 millions de clients mobiles au S1 2025, en légère baisse de 1,2% en année sur année.",
+      "metadata": {
+        "periode": "S1 2025",
+        "annee": 2025,
+        "type": "operationnel"
+      }
+    },
+    {
+      "question": "Quelle est la base active 4G du Groupe Sonatel au premier trimestre 2024 ?",
+      "ground_truth": "La base active 4G compte 15,3 millions de clients au T1 2024, en croissance de 29,9% par rapport à 2023.",
+      "metadata": {
+        "periode": "T1 2024",
+        "annee": 2024,
+        "type": "operationnel"
+      }
+    },
+    {
+      "question": "Combien de clients fibre le Groupe Sonatel a-t-il au S1 2025 ?",
+      "ground_truth": "Le Groupe Sonatel compte 527 200 clients fibre au premier semestre 2025, en croissance de 41,7% par rapport à 2024.",
+      "metadata": {
+        "periode": "S1 2025",
+        "annee": 2025,
+        "type": "operationnel"
+      }
+    },
+    {
+      "question": "Quel est le résultat net consolidé du Groupe Sonatel pour l'exercice 2023 ?",
+      "ground_truth": "Le résultat net consolidé pour l'exercice 2023 s'élève à 331,7 milliards de FCFA, représentant 19% du chiffre d'affaires.",
+      "metadata": {
+        "periode": "Exercice 2023",
+        "annee": 2023,
+        "type": "financier"
+      }
+    },
+    {
+      "question": "Quel est le montant des investissements du Groupe Sonatel au S1 2025 ?",
+      "ground_truth": "Les investissements (CAPEX) s'élèvent à 152,6 milliards de FCFA au S1 2025, représentant 15,9% du chiffre d'affaires, en croissance de 13,4%.",
+      "metadata": {
+        "periode": "S1 2025",
+        "annee": 2025,
+        "type": "financier"
+      }
+    },
+    {
+      "question": "Combien de clients Orange Money actifs le Groupe compte-t-il au S1 2025 ?",
+      "ground_truth": "Le Groupe Sonatel compte 12,6 millions de clients Orange Money actifs au S1 2025, en croissance de 4,1% par rapport à 2024.",
+      "metadata": {
+        "periode": "S1 2025",
+        "annee": 2025,
+        "type": "operationnel"
+      }
+    },
+    {
+      "question": "Quel est le chiffre d'affaires consolidé pour l'exercice 2023 ?",
+      "ground_truth": "Le chiffre d'affaires consolidé de l'exercice 2023 s'élève à 1 620,7 milliards de FCFA, en croissance de 11,4% par rapport à 2022.",
+      "metadata": {
+        "periode": "Exercice 2023",
+        "annee": 2023,
+        "type": "financier"
+      }
+    },
+    {
+      "question": "Combien de clients haut débit fixe le Groupe Sonatel compte-t-il au T1 2024 ?",
+      "ground_truth": "Le Groupe Sonatel compte 775 000 clients haut débit fixe au T1 2024, en croissance de 24,7% par rapport à 2023.",
+      "metadata": {
+        "periode": "T1 2024",
+        "annee": 2024,
+        "type": "operationnel"
+      }
+    }
+  ]
+}
