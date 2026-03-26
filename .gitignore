@@ -71,3 +71,4 @@ logs/
 # Résultats d'évaluation 
 tests/evaluation_results.json
 tests/ragas_scores.json
+test_imports.py
