@@ -189,7 +189,7 @@ The **Faithfulness score (0.632)** reflects Claude's tendency to synthesise and 
 ## Project Structure
 
 ```
-seet-rag-financial-app/
+seet/
 ├── app_streamlit.py                      # Streamlit web interface
 ├── docker-compose.yml                    # OpenSearch + MinIO services
 ├── make_bucket_public.py                 # MinIO bucket policy setup
