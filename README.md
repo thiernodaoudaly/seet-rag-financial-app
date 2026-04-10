@@ -17,8 +17,6 @@
 
 </div>
 
----
-
 ## Context & Motivation
 
 This project was commissioned by the **Human Resources and Finance Division of Sonatel** (Orange Senegal) during an engineering internship. The challenge: Sonatel's financial analysts and HR teams needed to query complex PDF reports — full of tables, charts, and mixed-language content — without manually reading hundreds of pages each quarter.
@@ -26,8 +24,6 @@ This project was commissioned by the **Human Resources and Finance Division of S
 Seet RAG solves this by combining **multimodal document understanding** (Claude Vision), **semantic search** (BGE-M3 + OpenSearch hybrid), and **LLM-powered answer generation** (Claude 3.7 Sonnet) into a single, production-ready conversational interface.
 
 The system was evaluated against real Sonatel financial reports from 2023–2025 and achieved a **global RAGAS score of 84.4%**, with a perfect context recall of 100%.
-
----
 
 ## Key Features
 
@@ -38,8 +34,6 @@ The system was evaluated against real Sonatel financial reports from 2023–2025
 - **LLM reranking** — Claude Haiku re-scores retrieved chunks for relevance before passing them to the generator, improving answer precision
 - **Cited, image-grounded answers** — every response includes source references (file, page, section, period) and the corresponding page images stored in MinIO
 - **RAGAS-evaluated quality** — automated evaluation pipeline measuring Context Precision, Recall, Faithfulness, and Answer Relevancy
-
----
 
 ## Architecture
 
@@ -133,8 +127,6 @@ app_streamlit.py
    └── Renders answer, sources, and images in the Streamlit UI
 ```
 
----
-
 ## Tech Stack
 
 | Layer | Technology | Role |
@@ -150,8 +142,6 @@ app_streamlit.py
 | **PDF processing** | PyMuPDF + Poppler | PDF → image conversion |
 | **Orchestration** | Docker Compose | OpenSearch + MinIO service stack |
 | **Language** | Python 3.11 | — |
-
----
 
 ## Evaluation Results
 
@@ -183,8 +173,6 @@ The **perfect Context Recall (1.0)** confirms that the hybrid search + HNSW inde
 The **Faithfulness score (0.632)** reflects Claude's tendency to synthesise and paraphrase across multiple sources rather than quote verbatim — a characteristic of generative models that can be mitigated with stricter prompting or a citation-extraction post-processing step (planned for v2).
 
 **Overall: 84.4% global RAGAS score → rated "Excellent" for a production RAG system.**
-
----
 
 ## Project Structure
 
@@ -231,8 +219,6 @@ seet/
         └── Architecture_RAG_Financial_App.png
 ```
 
----
-
 ## Prerequisites
 
 | Requirement | Version | Notes |
@@ -255,8 +241,6 @@ sudo apt-get install poppler-utils
 ```
 
 **Windows:** Download from [oschwartz10612/poppler-windows](https://github.com/oschwartz10612/poppler-windows/releases), extract to `C:\Program Files\poppler`, and add `C:\Program Files\poppler\Library\bin` to your system PATH. Verify with `pdftoppm -v`.
-
----
 
 ## Installation & Setup
 
@@ -407,8 +391,6 @@ Console available at `http://localhost:9001` (minioadmin / minioadmin).
 
 After installing OpenSearch and MinIO manually, follow steps 1–4 and 7–9 from Option A (skip step 5 and 6).
 
----
-
 ## Configuration
 
 Copy `.env.example` to `.env` and fill in your values:
@@ -424,8 +406,6 @@ MINIO_SECRET_KEY=minioadmin
 ```
 
 > The `DATABASE_URL` for OpenSearch is currently hardcoded to `localhost:9200`. To point to a remote cluster, update the `host` and `port` parameters in `src/retrieval/opensearch_retriever.py` and `src/ingestion/opensearch_indexer.py`.
-
----
 
 ## Using the Application
 
@@ -484,8 +464,6 @@ The sidebar's **"Available data"** section shows:
 - Years and periods covered
 - Document types available
 
----
-
 ## Running the Evaluation
 
 The evaluation pipeline measures system quality against a gold dataset of 10 question–answer pairs built from Sonatel's 2023–2025 reports.
@@ -510,8 +488,6 @@ python tests/run_ragas_evaluation.py
 | Answer Relevancy | Does the answer actually address the question? |
 
 Scores range from 0.0 to 1.0. See [Evaluation Results](#-evaluation-results) for the current baseline.
-
----
 
 ## Troubleshooting
 
@@ -575,8 +551,6 @@ netstat -ano | findstr :9200
 # Kill the process or change the port in docker-compose.yml
 ```
 
----
-
 ## Roadmap
 
 - [ ] Add DELETE and UPDATE routes for indexed documents
@@ -586,15 +560,11 @@ netstat -ano | findstr :9200
 - [ ] Publish pre-built Docker image to Docker Hub
 - [ ] Add GitHub Actions CI for automated RAGAS regression testing
 
----
-
 ## Contributors
 
 **Astou DIALLO · Cheikh Marie Teuw DIOP · Thierno Daouda LY**
 
 Built during an engineering internship at **Sonatel** (Orange Senegal), in response to a real business need from the HR and Finance Division.
-
----
 
 ## License
 
@@ -604,5 +574,3 @@ This project is released under the MIT License. It integrates the following thir
 - **MinIO** — GNU AGPL v3
 - **BGE-M3** — MIT
 - **RAGAS** — Apache 2.0
-
----
