@@ -11,7 +11,7 @@
 ![RAGAS](https://img.shields.io/badge/RAGAS%20Score-84.4%25-22c55e?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
-**An end-to-end multimodal RAG system for intelligent financial report analysis — built for and deployed at [Sonatel](https://www.sonatel.sn), West Africa's leading telecommunications group.**
+**An end-to-end multimodal RAG system for intelligent financial report analysis — built for and deployed at [Sonatel (Orange Senegal)](https://www.sonatel.sn), West Africa's leading telecommunications group.**
 
 *"Seet" (ꜱᴇᴇᴛ) — from Wolof, meaning "to search"*
 
